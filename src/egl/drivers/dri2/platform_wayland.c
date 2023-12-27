@@ -2083,6 +2083,7 @@ dri2_initialize_wayland_drm(_EGLDisplay *disp)
 {
    _EGLDevice *dev;
    struct dri2_egl_display *dri2_dpy;
+   printf("hello from dri2_initialize_wayland_drm\n");
 
    dri2_dpy = calloc(1, sizeof *dri2_dpy);
    if (!dri2_dpy)

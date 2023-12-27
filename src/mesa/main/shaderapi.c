@@ -1619,6 +1619,7 @@ void GLAPIENTRY
 _mesa_AttachShader(GLuint program, GLuint shader)
 {
    GET_CURRENT_CONTEXT(ctx);
+   printf("shader\n");
    attach_shader_err(ctx, program, shader, "glAttachShader");
 }
 
@@ -1627,6 +1628,7 @@ void GLAPIENTRY
 _mesa_CompileShader(GLuint shaderObj)
 {
    GET_CURRENT_CONTEXT(ctx);
+   printf("shader\n");
    if (MESA_VERBOSE & VERBOSE_API)
       _mesa_debug(ctx, "glCompileShader %u\n", shaderObj);
    _mesa_compile_shader(ctx, _mesa_lookup_shader_err(ctx, shaderObj,
@@ -1638,6 +1640,7 @@ GLuint GLAPIENTRY
 _mesa_CreateShader_no_error(GLenum type)
 {
    GET_CURRENT_CONTEXT(ctx);
+   printf("shader\n");
    return create_shader(ctx, type);
 }
 

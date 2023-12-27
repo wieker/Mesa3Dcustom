@@ -601,6 +601,7 @@ _eglInitContext(_EGLContext *ctx, _EGLDisplay *disp, _EGLConfig *conf,
 {
    const EGLenum api = eglQueryAPI();
    EGLint err;
+	printf("drmCC init\n");
 
    if (api == EGL_NONE)
       return _eglError(EGL_BAD_MATCH, "eglCreateContext(no client API)");

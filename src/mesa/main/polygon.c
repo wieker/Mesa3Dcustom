@@ -239,6 +239,7 @@ void GLAPIENTRY
 _mesa_PolygonMode(GLenum face, GLenum mode)
 {
    GET_CURRENT_CONTEXT(ctx);
+   printf("here\n");
    polygon_mode(ctx, face, mode, false);
 }
 

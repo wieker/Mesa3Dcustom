@@ -1367,6 +1367,7 @@ _mesa_DrawArrays(GLenum mode, GLint start, GLsizei count)
 {
    GET_CURRENT_CONTEXT(ctx);
    FLUSH_FOR_DRAW(ctx);
+   printf("called\n");
 
    _mesa_set_draw_vao(ctx, ctx->Array.VAO,
                       ctx->VertexProgram._VPModeInputFilter);
